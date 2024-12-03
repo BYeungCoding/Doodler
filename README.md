@@ -20,7 +20,8 @@ Finally there is a **Clear Sketch** button, as the name entails, when clicked it
 - Then run the project and have fun!\
 
 ### References
-Most of my references were just running into an issue and not knowing how to solve it, then googling what I was trying to do and figuring it out. This involved either checking stack overflow or other forums, the Android developers documentation, or skimming through a YouTube video explaining how to do something. There are a bunch of pages that I could reference but didn't think that would be valueable as it is just a bunch of different links to the sites I said I had used. Here are the main sites in a list:\
+Most of my references were just running into an issue and not knowing how to solve it, then googling what I was trying to do and figuring it out. This involved either checking stack overflow or other forums, the Android developers documentation, or skimming through a YouTube video explaining how to do something. There are a bunch of pages that I could reference but didn't think that would be valueable as it is just a bunch of different links to the sites I said I had used.\
+Here are the main sites in a list:
 - [stack overflow](https://stackoverflow.com/)
 - [android developer](https://developer.android.com/)
 - [youtube](https://www.youtube.com/)
