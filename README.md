@@ -1,5 +1,5 @@
 # Doodler
-This is an android app for CISC482 a doodling app called the Doodler.\
+This is an android app for CISC482 that allows you to doodle called the Doodler.\
 On the Doodler you can do some very simple drawing.\
 You have three different parameters that you can change for the brush.\
 They are:
