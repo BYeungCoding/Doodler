@@ -7,10 +7,10 @@ They are:
 - Brush Opacity
 - Brush Color
 
-**Brush Size** is a slider that sets the strokeWidth of the brush to 10 by default, but it goes from 1-100 left to right.\
-**Brush Opacity** is also a slider that sets the opacity to it's max at 255 by default, but goes down from 255-0 right to left.\
-**Brush Color** is a button that when clicked gives you a choice of 6 different colors Red, Green, Blue, Yellow, Black, and White.\
-Finally there is a **Clear Sketch** button, as the name entails, when clicked it clears all of the drawing that has been done so far.
+<ins>**Brush Size**</ins> is a slider that sets the strokeWidth of the brush to 10 by default, but it goes from 1-100 left to right.\
+<ins>**Brush Opacity**</ins> is also a slider that sets the opacity to it's max at 255 by default, but goes down from 255-0 right to left.\
+<ins>**Brush Color**</ins> is a button that when clicked gives you a choice of 6 different colors Red, Green, Blue, Yellow, Black, and White.\
+Finally there is a <ins>**Clear Sketch**</ins> button, as the name entails, when clicked it clears all of the drawing that has been done so far.
 
 ## How to run
 - To run this project you must clone the repository from Github.
