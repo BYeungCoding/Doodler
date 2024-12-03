@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Doodler</string>
+    <string name="clear">Clear Sketch</string>
+    <string name="size">Brush Size</string>
+    <string name="color">Color</string>
+    <string name="opacity">Opacity</string>
+    <string name="brush_label">Brush Size</string>
+</resources>
