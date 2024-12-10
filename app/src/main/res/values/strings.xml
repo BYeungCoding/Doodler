@@ -5,4 +5,6 @@
     <string name="color">Color</string>
     <string name="opacity">Opacity</string>
     <string name="brush_label">Brush Size</string>
+    <string name="eraser">Eraser</string>
+    <string name="drawing">Drawing</string>
 </resources>

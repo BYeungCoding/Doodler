@@ -12,6 +12,8 @@ import androidx.core.content.ContextCompat;
 public class MainActivity extends AppCompatActivity {
 
     private DoodleView doodleView;
+    private Button eraserButton;
+    private boolean isEraserActive = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         doodleView = findViewById(R.id.doodle_view);
         Button clearButton = findViewById(R.id.btn_clear);
         Button colorPickerButton = findViewById(R.id.btn_color_picker);
+        eraserButton = findViewById(R.id.btn_eraser);
         @SuppressLint("CutPasteId") SeekBar brushSizeSeekBar = findViewById(R.id.seek_brush_size);
         @SuppressLint("CutPasteId") SeekBar opacitySeekBar = findViewById(R.id.seek_opacity);
 
@@ -63,6 +66,18 @@ public class MainActivity extends AppCompatActivity {
         clearButton.setOnClickListener(v -> doodleView.clearCanvas());
 
         colorPickerButton.setOnClickListener(v -> showColorPickerDialog());
+
+        // Set up eraser button click listener
+        eraserButton.setOnClickListener(v -> {
+            if (isEraserActive) {
+                doodleView.disableEraser();
+                eraserButton.setText(R.string.eraser);
+            } else {
+                doodleView.enableEraser();
+                eraserButton.setText(R.string.drawing);
+            }
+            isEraserActive = !isEraserActive;
+        });
     }
 
     private void showColorPickerDialog() {
@@ -84,6 +99,13 @@ public class MainActivity extends AppCompatActivity {
         builder.setItems(colors, (dialog, which) -> {
             // Set the brush color based on the selected color
             doodleView.setBrushColor(colorValues[which]);
+
+            // Deactivate eraser if it's active and reset the button text
+            if (isEraserActive) {
+                doodleView.disableEraser();
+                eraserButton.setText(R.string.eraser);
+                isEraserActive = false;
+            }
         });
 
         builder.create().show();
